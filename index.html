@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introvert Quiz Poll</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" id="name"  placeholder="Enter your name" required>
+            <button type="submit">Start Quiz</button>
+        </form>
+    </div>
+    <div class="container hidden" id="quizContainer">
+        <h1>Introvert Quiz Poll</h1>
+        <form id="quizForm">
+            <div class="question" id="question1">
+                <label>1. Do you prefer one-on-one conversations than group activities?</label>
+                <div class="options">
+                    <input type="radio" name="q1" value="yes" required> Yes
+                    <input type="radio" name="q1" value="no" required> No
+                </div>
+            </div>
+            <div class="question hidden" id="question2">
+                <label>2. Do you dislike small talk but enjoy talking about specific topics in depth?</label>
+                <div class="options">
+                    <input type="radio" name="q2" value="yes" required> Yes
+                    <input type="radio" name="q2" value="no" required> No
+                </div>
+            </div>
+            <div class="question hidden" id="question3">
+                <label>3. Do you enjoy spending time alone sometimes?</label>
+                <div class="options">
+                    <input type="radio" name="q3" value="yes" required> Yes
+                    <input type="radio" name="q3" value="no" required> No
+                </div>
+            </div>
+            <div class="question hidden" id="question4">
+                <label>4. Do you prefer not to show or discuss your work with others until it’s finished?</label>
+                <div class="options">
+                    <input type="radio" name="q4" value="yes" required> Yes
+                    <input type="radio" name="q4" value="no" required> No
+                </div>
+            </div>
+            <div class="question hidden" id="question5">
+                <label>5. Do people say you are soft-spoken or that you don’t talk much?</label>
+                <div class="options">
+                    <input type="radio" name="q5" value="yes" required> Yes
+                    <input type="radio" name="q5" value="no" required> No
+                </div>
+            </div>
+            <div class="question hidden" id="question6">
+                <label>6. Do you think a lot before speaking or giving your opinion?</label>
+                <div class="options">
+                    <input type="radio" name="q6" value="yes" required> Yes
+                    <input type="radio" name="q6" value="no" required> No
+                </div>
+            </div>
+            <div class="question hidden" id="question7">
+                <label>7. When you see people you know, do you try to ignore them because you don’t like the formalities of saying "Hello" and "Hi"?</label>
+                <div class="options">
+                    <input type="radio" name="q7" value="yes" required> Yes
+                    <input type="radio" name="q7" value="no" required> No
+                </div>
+            </div>
+            <div class="question hidden" id="question8">
+                <label>8. Do you feel more comfortable expressing yourself through writing or art than through talking?</label>
+                <div class="options">
+                    <input type="radio" name="q8" value="yes" required> Yes
+                    <input type="radio" name="q8" value="no" required> No
+                </div>
+            </div>
+            <div class="question hidden" id="question9">
+                <label>9. Do you feel uncomfortable being the center of attention?</label>
+                <div class="options">
+                    <input type="radio" name="q9" value="yes" required> Yes
+                    <input type="radio" name="q9" value="no" required> No
+                </div>
+            </div>
+            
+            <div class="question hidden" id="question10">
+                <label>10. Do you tend to avoid conflict and prefer peaceful, quiet environments?</label>
+                <div class="options">
+                    <input type="radio" name="q10" value="yes" required> Yes
+                    <input type="radio" name="q10" value="no" required> No
+                </div>
+            </div>
+            
+
+
+            
+            <button type="button" id="nextBtn">Next</button>
+            <button type="submit" id="submitBtn" class="hidden">Submit</button>
+            <div id="result" class="hidden">
+                <h2>Results:</h2>
+                <p id="resultText"></p>
+            </div>
+        </form>
+    </div>
+    <script src="index.js" defer></script>
+</body>
+</html>
